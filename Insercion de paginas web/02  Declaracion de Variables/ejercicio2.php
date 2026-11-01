@@ -12,7 +12,7 @@ $disponibilidadProducto = true;             //Booleano
 
 //Mostramos la información básica en formato texto plano
 
-echo "--- DATOS DEL PRODUCTO --- \m";
+echo "--- DATOS DEL PRODUCTO --- \n";
 echo "Producto: " . $nombreProducto . "\n";
 echo "Precio Producto: " . $precioProducto . " EUR\n";
 echo "Stock: " . $stockProducto . " unidades\n";
