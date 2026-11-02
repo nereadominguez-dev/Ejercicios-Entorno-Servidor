@@ -22,4 +22,4 @@ if (isset($_GET['anio'])) {
 } else {
     echo "<p>Por favor, introduce un año válido.</p>";
 }
-?>
+?>Suscripción Email (POST)
