@@ -5,6 +5,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $comentario = $_POST["comentario"];
 
     //Sanitizar el texto para evitar inyecciones HTML/JS
+    /*ENT_QUOTES Cuando un usuario escribe texto en un formulario, puede usar
+     tanto comillas dobles (") como comillas simples ('). Si esas comillas 
+     se van a mostrar luego dentro del código HTML de tu página (por ejemplo,
+     dentro de un atributo como <input value="...">), un usuario 
+     malintencionado podría aprovecharlas para cerrar el atributo antes de 
+     tiempo e intentar inyectar código malicioso (ataques de tipo XSS o 
+     inyección de atributos).*/
     $comentarioSeguro = htmlspecialchars($comentario, ENT_QUOTES, 'UTF-8'); 
 } else{
     die("Acceso no permitido"); //die es un función nativa de PHP "morir/parar"
