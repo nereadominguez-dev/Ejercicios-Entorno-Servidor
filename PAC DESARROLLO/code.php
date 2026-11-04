@@ -119,8 +119,6 @@
         $contrasena,
         $rol = "invitado"
     ) {
-
-        // COMPLETAR
         
        if (trim($contrasena) === 'DWES2026') {  
             if (trim($rol) === 'administrador') {
@@ -132,10 +130,6 @@
         return "<p>Acceso denegado</p>";
         }
             
-     
-
-        //COMPLETAR
-
     }
 
     echo "<p>";
